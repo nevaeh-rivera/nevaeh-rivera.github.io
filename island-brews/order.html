@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+  <title>Order</title>
+</head>
+<body>
+  <div>
+    <img src="https://images.unsplash.com/photo-1587080413959-06b859fb107d?q=80&w=1784&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="coffe cup with beans surrounding it" width="10%">
+    <h1>Island Brews - Catering Order</h1>
+  </div>
+
+  <div>
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="order.html">Order</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <div>
+    <h2>Place Your Catering Order</h2>
+    <p>Fill out the form below to order coffee and snacks for your next event!</p>
+
+    <p>* fields are required</p>
+
+    <form>
+      <h2>Contact Information</h2>
+
+      <p>
+        <label for="name">Full Name *</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter your name">
+      </p>
+
+      <p>
+        <label for="email">Email *</label><br>
+        <input type="text" id="email" name="email"placeholder="Enter your email">
+      </p>
+
+      <p>
+        <label for="phone">Phone *</label><br>
+        <input type="tel" placeholder="Enter your number" required>
+      </p>
+
+      <h2>Order Details</h2>
+
+      <p>
+        <label for="event-date">Event Date *</label><br>
+        <input type="date" id="event-date" placeholder="MM/DD/YYYY">
+      </p>
+
+      <p>
+        <span>Number of Guests *</span><br>
+        <input type="text" id="guests">
+      </p>
+
+      <p>
+        <label for="Coffee Selection">Coffee Selection</label>
+        <select id="coffee-selection" name="coffee-selection">
+          <option value="">Choose one</option>
+          <option value="kona">Kona Blend</option>
+          <option value="espresso">Espresso Bar</option>
+          <option value="cold">Cold Brew Station</option>
+        </select>
+      </p>
+
+      <h3>Pastry Add-ons</h3>
+
+      <p>
+        <input type="checkbox" value="muffins"> Tropical Muffins ($3/person)<br>
+        <input type="checkbox" value="croissants"> Butter Croissants ($4/person)<br>
+        <input type="checkbox" value="scones"> Hawaiian Scones ($3.50/person)
+      </p>
+
+      <p>
+         special request
+          <br>
+        <textarea id="speacial request" name="special request" rows="4" cols="30" placeholder="Any dietary restrictions or special requests?"></textarea>
+          <br> <br>
+      </p>
+
+      <h2>Pricing Information</h2>
+
+      <table border="1">
+        <tr>
+          <th>Package</th>
+          <th>Price per Person</th>
+          <th>Minimum Order</th>
+        </tr>
+        <tr>
+          <td>Basic Coffee Service</td>
+          <td>$8</td>
+          <td>10 guests</td>
+        </tr>
+        <tr>
+          <td>Premium Espresso Bar</td>
+          <td>$15</td>
+          <td>15 guests</td>
+        </tr>
+        <tr>
+          <td>Full Breakfast Spread</td>
+          <td>$25</td>
+          <td>20 guests</td>
+        </tr>
+      </table>
+
+      <p>View our<a href="catering-details.html"> catering details</a>.</p>
+
+      <button>Submit Order</button>
+    </form>
+  </div>
+
+  <div>
+    <p>© 2026 Island Brews Café</p>
+    <p>123 Palm Street, Honolulu, HI</p>
+  </div>
+</body>
+</html>
+
