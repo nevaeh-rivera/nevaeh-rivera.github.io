@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Title</title>
+</head>
+<body>
+
+/* ===================
+   Island Brews Menu Styles
+   ===================
+
+   Colors you'll need:
+   - Coffee Brown: #5D4037
+   - Light Brown:  #8D6E63
+   - Tropical Orange: #C65500
+   - Dark Roast:   #3E2723
+   - Cream:        #FFFAF0
+   - Light Peach:  #FFF3E0
+   - Warm Gray:    #D7CCC8
+*/
+
+/* ===================
+   PART 1: Reset & Base Styles
+   =================== */
+
+/* Step 1: Apply box-sizing globally */
+* {
+  box-sizing: border-box;
+}
+
+/* Step 2: Style the body */
+body {
+  font-family:'Segoe UI', Tahoma ,sans-serif;
+  font-size:16px;
+  line-height:1.6;
+  color:#3E2723;
+  background-color:#FFFAF0;
+}
+
+/* ===================
+   PART 2: Headings
+   =================== */
+
+/* Step 1: Set heading font and color */
+h1, h2, h3 {
+  font-family: Georgia, serif;
+  color:#5D4037;
+}
+
+/* Step 2: Set heading sizes */
+h1 {
+  font-size: 2.rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+/* ===================
+   PART 3: Structure Colors
+   =================== */
+
+/* Step 1: Style the header background */
+header {
+  background-color: #5D4037;
+  color: #FFFAF0;
+}
+
+/* Step 2: Style nav links to match header */
+nav a {
+  color: #FFFAF0;
+}
+
+/* Step 3: Style menu sections */
+section {
+  background-color:  #FFF3E0;
+}
+
+/* ===================
+   PART 4: Links
+   =================== */
+
+/* Step 1: Base link color */
+a {
+  color: #C65500 ;
+}
+
+/* Step 2: Hover state */
+a:hover {
+  color: #8D6E63;
+}
+
+/* Step 3: Focus state (for keyboard users) */
+a:focus {
+  outline: 2px solid #C65500 ;
+}
+    
+</body>
+</html>
