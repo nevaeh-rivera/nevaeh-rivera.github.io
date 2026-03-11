@@ -95,6 +95,149 @@ a:hover {
 /* Step 3: Focus state (for keyboard users) */
 a:focus {
   outline: 2px solid #C65500 ;
+    
+
+}
+/* ===================
+   PART 2: Tables & Layout (Assignment 9)
+   ===================
+
+   Colors you'll need:
+   - Coffee Brown: #5D4037
+   - Light Brown:  #8D6E63
+   - Tropical Orange: #C65500
+   - Dark Roast:   #3E2723
+   - Cream:        #FFFAF0
+   - Light Peach:  #FFF3E0
+   - Warm Gray:    #D7CCC8
+*/
+
+/* ===================
+   TABLE STYLES
+   =================== */
+
+/* Step 1: Make tables full-width and collapse borders */
+table {
+  width: 100%;                      /* Use 100% to fill the section */
+  border-collapse:collapse;            /* Use "separate" to remove double borders */
+}
+
+/* Step 2: Style table headers */
+thead th {
+  background-color:#5D4037;          /* Use Coffee Brown: #5D4037 */
+  color: #FFFAF0;                      /* Use Cream: #FFFAF0 */
+  padding:12px;                    /* Use 12px for comfortable spacing */
+  text-align: left;                 /* Use "left" for readable alignment */
+}
+
+/* Step 3: Style table body cells */
+td, tbody th {
+  padding: 10px;                    /* Use 10px for cell spacing */
+  border-bottom: 1px solid #D7CCC8;              /* Use 1px solid #D7CCC8 for subtle row lines */
+}
+
+/* Step 4: Alternating row colors */
+tbody tr:nth-child(even) {
+  background-color: #FFF3E0          /* Use Light Peach: #FFF3E0 */
+}
+
+/* Step 5: Highlight rows on hover */
+tbody tr:hover {
+  background-color:#D7CCC8;          /* Use Warm Gray: #D7CCC8 */
+}
+
+/* Step 6: Right-align price columns */
+td:nth-child(3),
+td:nth-child(4) {
+  text-align: right;                 /* Use "left" for price alignment */
+  color: #C65500;                      /* Use Tropical Orange: #C65500 */
+  font-weight: bold;                /* Use "bold" to make prices stand out */
+}
+
+/* ===================
+   BOX MODEL SPACING
+   =================== */
+
+/* Step 7: Add padding inside the header */
+header {
+  padding: 16px 24px;                    /* Use 16px 24px for top/bottom and left/right */
+}
+
+/* Step 8: Fix the invisible header heading */
+header h1 {
+  color: #FFFAF0;                      /* Use Cream: #FFFAF0 */
+}
+
+/* Step 9: Space out the main content */
+main {
+  padding: 24px;                    /* Use 24px for breathing room around content */
+  max-width: 900px;                  /* Use 900px to keep lines readable */
+  margin: 0 auto;                     /* Use 0 auto to center the main content */
+}
+
+/* Step 10: Space between sections */
+section {
+  margin-bottom: 32px;              /* Use 32px for clear separation between sections */
+  padding: 20px;                    /* Use 20px for space inside each section */
+  border-radius: 8px;              /* Use 8px for slightly rounded corners */
+}
+
+/* Step 11: Style the page intro */
+main > p {
+  font-size: 1.1rem;                  /* Use 1.1rem for slightly larger intro text */
+  margin-bottom: 24px;              /* Use 24px for space below the intro */
+  color: #8D6E63 ;                      /* Use Light Brown: #8D6E63 */
+}
+
+/* ===================
+   SIDEBAR (ASIDE)
+   =================== */
+
+/* Step 12: Make the sidebar stand out */
+aside {
+  background-color: #5D4037;          /* Use Coffee Brown: #5D4037 */
+  color: #FFFAF0;                      /* Use Cream: #FFFAF0 */
+  padding: 20px;                    /* Use 20px for comfortable spacing */
+  border-radius: 8px;              /* Use 8px to match the sections */
+  margin-bottom: 32px;              /* Use 32px for space below */
+}
+
+/* Step 13: Style the sidebar heading */
+aside h2 {
+  color: #FFFAF0;                      /* Use Cream: #FFFAF0 */
+  border-bottom: 2px solid #8D6E62;              /* Use 2px solid #8D6E63 for a subtle divider */
+  padding-bottom: 8px;             /* Use 8px for space between heading and line */
+  margin-bottom: 16px;              /* Use 16px for space below the divider */
+}
+
+/* Step 14: Style the add-ons list */
+aside ul {
+  list-style: none;                 /* Use "none" to remove default bullets */
+  padding: 0;                    /* Use 0 to remove default list indentation */
+}
+
+aside li {
+  padding: 6px;                    /* Use 6px 0 for space between items */
+  border-bottom: 1px;              /* Use 1px solid #8D6E63 for subtle separators */
+}
+
+/* ===================
+   FOOTER
+   =================== */
+
+/* Step 15: Style the footer */
+footer {
+  background-color: #3E2723;          /* Use Dark Roast: #3E2723 */
+  color: #FFFAF0;                      /* Use Cream: #FFFAF0 */
+  text-align: center;                 /* Use "center" */
+  padding: 24px;                    /* Use 24px */
+}
+
+/* Step 16: Style the address in the footer */
+footer address {
+  font-style: normal;                 /* Use "normal" to remove default italic */
+  margin-top: 8px;                 /* Use 8px for space above the address */
+  color: #D7CCC8;                      /* Use Warm Gray: #D7CCC8 */
 }
     
 </body>
