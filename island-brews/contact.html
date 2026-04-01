@@ -10,49 +10,42 @@
     <p>Planning an event? Let us bring the aloha to you!</p>
 
     <form>
-      <!-- PART 1: Contact Information Fieldset -->
       <fieldset>
         <legend>Contact Information</legend>
 
-        <!-- TODO: Add Name Input (see Part 1, Step 1) -->
-        <label for="___">Your Name:</label>
-        <input type="text" id="___" name="name" ___ required>
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
 
         <br><br>
 
-        <!-- TODO: Add Email Input (see Part 1, Step 2) -->
-        <label for="___">Email Address:</label>
-        <input type="email" id="email" name="email" ___>
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
       </fieldset>
 
       <br>
 
-      <!-- PART 2: Event Type Dropdown (see Part 2, Step 1) -->
       <label for="event-type">Event Type:</label>
       <select id="event-type" name="event-type">
         <option value="">Choose event type</option>
-        <option value="corprate">Corporate Meeting</option>
-        <option value="weeding">Wedding</option>
+        <option value="corporate">Corporate Meeting</option>
+        <option value="wedding">Wedding</option>
         <option value="birthday">Birthday Party</option>
         <option value="other">Other</option>
       </select>
 
       <br><br>
 
-      <!-- PART 2: Event Date (see Part 2, Step 2) -->
       <label for="event-date">Event Date:</label>
       <input type="date" id="event-date" name="event-date" required>
 
       <br><br>
 
-      <!-- PART 2: Additional Details (see Part 2, Step 3) -->
       <label for="details">Additional Details:</label>
       <br>
       <textarea id="details" name="details" rows="5" cols="40"></textarea>
 
       <br><br>
 
-      <!-- PART 3: Newsletter Checkbox (see Part 3, Step 1) -->
       <input type="checkbox" id="newsletter" name="newsletter">
       <label for="newsletter">Send me the Island Brews newsletter</label>
 
@@ -60,7 +53,6 @@
 
       <p><em>We'll respond within 2 business days.</em></p>
 
-      <!-- PART 3: Submit Button (see Part 3, Step 2) -->
       <button type="submit">Submit Inquiry</button>
     </form>
   </body>
