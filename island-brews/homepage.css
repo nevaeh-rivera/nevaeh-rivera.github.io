@@ -1,8 +1,13 @@
 /* ===================
-   Island Brews Homepage Styles
+   Island Brews - Responsive Homepage
    ===================
 
-   Colors you'll need:
+   MOBILE-FIRST APPROACH:
+   - Base styles = mobile (smallest screens)
+   - @media (min-width: 768px) = tablet and up
+   - @media (min-width: 1024px) = desktop and up
+
+   Colors:
    - Coffee Brown: #5D4037
    - Light Brown: #8D6E63
    - Tropical Orange: #C65500
@@ -30,35 +35,43 @@ body {
   background-color: #FFFAF0;
 }
 
-/* ===================
-   PART 1: Header & Navigation
-   =================== */
-
-/* Step 1: Make header a flex container */
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #5D4037;
-  padding: 16px 24px;
+/* IMPORTANT: Make all images responsive */
+img {
+  max-width: 100px;                /* Use 100px so images never overflow */
+  height: auto;                   /* Use "auto" to keep proportions */
 }
 
-/* Step 2: Style the logo */
+/* ===================
+   MOBILE BASE STYLES
+   These apply to ALL screen sizes, starting with mobile
+   =================== */
+
+/* Header: stacked vertically on mobile */
+header {
+  display: flex;
+  flex-direction: column;           /* Use "column" to stack logo above nav */
+  align-items: center;              /* Use "center" to center everything */
+  background-color: #5D4037;
+  padding: 16px;
+  gap: 12px;                      /* Use 12px for space between logo and nav */
+}
+
 .logo {
-  font-family: georgia, serif;
+  font-family: Georgia, serif;
   font-size: 1.5rem;
   font-weight: bold;
   color: #FFFAF0;
 }
 
-/* Step 3: Make nav list horizontal */
+/* Nav: centered and wrapping on mobile */
 nav ul {
   display: flex;
-  gap: 24px;
+  flex-wrap: ___;                /* Use "wrap" so links can wrap on tiny screens */
+  justify-content: ___;          /* Use "center" to center the nav links */
+  gap: ___;                      /* Use 8px for tighter spacing on mobile */
   list-style: none;
 }
 
-/* Step 4: Style nav links */
 nav a {
   color: #FFFAF0;
   text-decoration: none;
@@ -71,38 +84,31 @@ nav a:hover {
   border-radius: 4px;
 }
 
-/* ===================
-   PART 2: Hero Section
-   =================== */
-
-/* Step 1: Center hero content */
+/* Hero: shorter on mobile */
 .hero {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 60vh;
+  min-height: 40vh;               /* Use 40vh (shorter on mobile) */
   background-color: #FFF3E0;
-  padding: 40px 24px;
+  padding: 32px 16px;
   text-align: center;
 }
 
 .hero h1 {
   font-family: Georgia, serif;
-  font-size: 3rem;
+  font-size: 2rem;                /* Use 2rem (smaller on mobile) */
   color: #5D4037;
   margin-bottom: 16px;
 }
 
 .hero p {
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   margin-bottom: 24px;
 }
 
-/* ===================
-   Button (already complete!)
-   =================== */
-
+/* Button (same as Weeks 10-11) */
 .button {
   display: inline-block;
   background-color: #C65500;
@@ -117,12 +123,9 @@ nav a:hover {
   background-color: #A85400;
 }
 
-/* ===================
-   Featured Section (Week 11)
-   =================== */
-
+/* Featured section */
 .featured {
-  padding: 40px 20px;
+  padding: 32px 16px;
 }
 
 .featured h2 {
@@ -132,16 +135,14 @@ nav a:hover {
   margin-bottom: 24px;
 }
 
-/* You'll add Flexbox styles here in Week 11 */
+/* Cards: single column on mobile */
 .card-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-
+  display: flex;
+  flex-direction: "column";           /* Use "column" to stack cards vertically */
+  gap: 20px;
 }
 
 .card {
-    flex: 1 1 280px;
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -152,7 +153,7 @@ nav a:hover {
 .card img {
   width: 100%;
   height: 200px;
-  object-fit: cover;
+  object-fit: cover;               /* Use "cover" to fill without stretching */
   border-radius: 4px;
 }
 
@@ -168,13 +169,85 @@ nav a:hover {
   font-size: 1.25rem;
 }
 
-/* ===================
-   Footer (Week 11)
-   =================== */
-
+/* Footer */
 footer {
   background-color: #5D4037;
   color: #FFFAF0;
   text-align: center;
   padding: 20px;
+}
+
+/* ===================
+   TABLET STYLES (768px and up)
+   =================== */
+
+@media (min-width: 768px) {
+
+  /* Header: side-by-side on tablet */
+  header {
+    flex-direction: row;         /* Use "row" to put logo and nav side-by-side */
+    justify-content: space-between;        /* Use "space-between" to push them apart */
+    padding: 16px 24px;
+  }
+
+  /* Nav: more spacing on tablet */
+  nav ul {
+    gap:16px;                    /* Use 16px */
+  }
+
+  /* Hero: taller on tablet */
+  .hero {
+    min-height: 50vh;             /* Use 50vh */
+    padding: 40px 24px;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;              /* Use 2.5rem */
+  }
+
+  /* Cards: side-by-side on tablet */
+  .card-container {
+    flex-direction: column;         /* Use "column" to lay out cards horizontally */
+    flex-wrap: wrap;              /* Use "wrap" so cards can wrap to next row */
+  }
+
+  .card {
+    flex:1 1 280px;           /* Use 1 1 280px (grow, shrink, min-width) */
+  }
+
+  .featured {
+    padding: 40px 24px;
+  }
+}
+
+/* ===================
+   DESKTOP STYLES (1024px and up)
+   =================== */
+
+@media (min-width: 1024px) {
+
+  /* Nav: widest spacing on desktop */
+  nav ul {
+    gap: 24px;                    /* Use 24px */
+  }
+
+  /* Hero: tallest on desktop */
+  .hero {
+    min-height: 60vh;             /* Use 60vh */
+  }
+
+  .hero h1 {
+    font-size: 3rem;              /* Use 3rem */
+  }
+
+  .hero p {
+    font-size: 1.25rem;              /* Use 1.25rem */
+  }
+
+  /* Limit content width on big screens */
+  .featured {
+    max-width: 1200px;              /* Use 1200px */
+    margin: 0 auto;               /* Use "auto" to center on page */
+    padding: 40px 20px;
+  }
 }
