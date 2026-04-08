@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang=en>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta bame="viewpart" content="width=device-width, intial-scale=1.0">
-  <title>CAtering Order | Island Brew Coffee</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catering Order | Island Brews Coffee</title>
 </head>
 <body>
   <header>
@@ -14,110 +14,106 @@
   <nav>
       <ul>
           <li><a href="index.html">Home</a></li>
-      <a href="menu.html">Menu</a>
-    <a href="order.html">Order</a>
-    <a href="contact.html">Contact</a>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="order.html">Order</a></li>
+          <li><a href="contact.html">Contact</a></li>
       </ul>
   </nav>
 
-  <div>
+  <main>
     <h2>Place Your Catering Order</h2>
     <p>Fill out the form below to order coffee and snacks for your next event!</p>
 
     <p>* fields are required</p>
-      
 
     <form>
-      <h2>Contact Information</h2>
+      <fieldset>
+        <legend>Contact Information</legend>
+        <p>
+          <label for="name">Full Name *</label><br>
+          <input type="text" id="name" name="name" placeholder="name" required>
+        </p>
 
-      <p>
-        <label for="name">Full Name *</label><br>
-        <input type="text" id="name" name="name" placeholder="name" required>
-      </p>
+        <p>
+          <label for="email">Email *</label><br>
+          <input type="email" id="email" name="email" placeholder="Enter your email">
+        </p>
 
-      <p>
-        <label for="email">Email *</label><br>
-        <input type="text" id="email" name="email"placeholder="Enter your email">
-      </p>
+        <p>
+          <label for="phone">Phone </label><br>
+          <input type="tel" id="phone" name="phone" placeholder="Enter your number">
+        </p>
+      </fieldset>
 
-      <p>
-        <label for="phone">Phone </label><br>
-        <input type="tel" placeholder="Enter your number" >
-      </p>
-<fieldset>
-      <legend>Order Details</legend>
+      <fieldset>
+        <legend>Order Details</legend>
 
-      <p>
-        <label for="event-date">Event Date *</label><br>
-        <input type="date" id="event-date" name="event-date" required>
-      </p>
+        <p>
+          <label for="event-date">Event Date *</label><br>
+          <input type="date" id="event-date" name="event-date" required>
+        </p>
 
-      <p>
-        <label for="guests">Number of Guests *</label><br>
-        <input type="number" id="guests" min="1" required>
-      </p>
+        <p>
+          <label for="guests">Number of Guests *</label><br>
+          <input type="number" id="guests" name="guests" min="1" required>
+        </p>
 
-      <p>
-        <label for="Coffee-type">Coffee Selection</label>
-        <select id="coffee-type" name="coffee-type">
-          <option value="">Choose one</option>
-          <option value="kona">Kona Blend</option>
-          <option value="espresso">Espresso Bar</option>
-          <option value="cold">Cold Brew Station</option>
-        </select>
-      </p>
-<fieldset>
-      <legendary>Pastry Add-ons</legendary>
+        <p>
+          <label for="coffee-type">Coffee Selection</label>
+          <select id="coffee-type" name="coffee-type">
+            <option value="">Choose one</option>
+            <option value="kona">Kona Blend</option>
+            <option value="espresso">Espresso Bar</option>
+            <option value="cold">Cold Brew Station</option>
+          </select>
+        </p>
 
-      <p>
-        <input type="checkbox" id="muffins" name="pastries" value="muffins"> 
-          <label for="muffins">Tropical Muffins ($3/person)</label> <br>
-        <input type="checkbox" id="croissants" name="pastries" value="croissants"> 
-          <label for="croissant">Butter Croissants ($4/person)</label><br>
-        <input type="checkbox" id="scones" name="pastries" value="scones"> 
-          <label for="scones">Hawaiian Scones ($3.50/person)</label>
-      </p>
+        <fieldset>
+          <legend>Pastry Add-ons</legend>
+          <p>
+            <input type="checkbox" id="muffins" name="pastries" value="muffins"> 
+            <label for="muffins">Tropical Muffins ($3/person)</label> <br>
+            <input type="checkbox" id="croissants" name="pastries" value="croissants"> 
+            <label for="croissants">Butter Croissants ($4/person)</label><br>
+            <input type="checkbox" id="scones" name="pastries" value="scones"> 
+            <label for="scones">Hawaiian Scones ($3.50/person)</label>
+          </p>
+        </fieldset>
 
-      <p>
-          <label for="requests"> Special Requests</label> <br>
-        <textarea id="request" name="special request" rows="4" cols="40" placeholder="Any dietary restrictions or special requests?"></textarea>
-          <br> <br>
-      </p>
-    </fieldset>
-
-      <h3>Pricing Information</h3>
+        <p>
+          <label for="requests">Special Requests</label> <br>
+          <textarea id="requests" name="requests" rows="4" cols="40" placeholder="Any dietary restrictions or special requests?"></textarea>
+        </p>
+      </fieldset> <h3>Pricing Information</h3>
 
       <table border="1">
           <thead>
-          <tr>
-          <th scope="col">Package</th>
-          <th scope="col">Price per Person</th>
-          <th scope="col">Minimum Order</th>
-              
-        </tr>
+            <tr>
+              <th scope="col">Package</th>
+              <th scope="col">Price per Person</th>
+              <th scope="col">Minimum Order</th>
+            </tr>
           </thead>
           <tbody> 
-        <tr>
-          <td scope="row">Basic Coffee Service</td>
-          <td>$8</td>
-          <td>10 guests</td>
-        </tr>
-        <tr>
-          <td>Premium Espresso Bar</td>
-          <td>$15</td>
-          <td>15 guests</td>
-        </tr>
-        <tr>
-          <td>Full Breakfast Spread</td>
-          <td>$25</td>
-          <td>20 guests</td>
-            
-        </tr>
-        </tbody>
+            <tr>
+              <th scope="row">Basic Coffee Service</th>
+              <td>$8</td>
+              <td>10 guests</td>
+            </tr>
+            <tr>
+              <th scope="row">Premium Espresso Bar</th>
+              <td>$15</td>
+              <td>15 guests</td>
+            </tr>
+            <tr>
+              <th scope="row">Full Breakfast Spread</th>
+              <td>$25</td>
+              <td>20 guests</td>
+            </tr>
+          </tbody>
       </table>
-    
 
-      <p>View our<a href="menu.html"> catering details</a>.</p>
+      <p>View our <a href="menu.html">catering details</a>.</p>
 
       <button type="submit">Submit Order</button>
     </form>
@@ -129,4 +125,3 @@
   </footer>
 </body>
 </html>
-
