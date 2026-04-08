@@ -66,9 +66,9 @@ header {
 /* Nav: centered and wrapping on mobile */
 nav ul {
   display: flex;
-  flex-wrap: ___;                /* Use "wrap" so links can wrap on tiny screens */
-  justify-content: ___;          /* Use "center" to center the nav links */
-  gap: ___;                      /* Use 8px for tighter spacing on mobile */
+  flex-wrap: wrap;                /* Use "wrap" so links can wrap on tiny screens */
+  justify-content: center;          /* Use "center" to center the nav links */
+  gap: 8px;                      /* Use 8px for tighter spacing on mobile */
   list-style: none;
 }
 
