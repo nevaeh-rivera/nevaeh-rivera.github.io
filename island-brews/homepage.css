@@ -94,18 +94,23 @@ nav a:hover {
   background-color: #FFF3E0;
   padding: 32px 16px;
   text-align: center;
+    
+    background-image: url('images/coffee-grinds.avif');
+    background-size: cover;
+    background-position: center;
 }
 
 .hero h1 {
   font-family: Georgia, serif;
   font-size: 2rem;                /* Use 2rem (smaller on mobile) */
-  color: #5D4037;
+  color: #FFFAF0;
   margin-bottom: 16px;
 }
 
 .hero p {
   font-size: 1.1rem;
   margin-bottom: 24px;
+     color: #FFFAF0;
 }
 
 /* Button (same as Weeks 10-11) */
@@ -207,7 +212,7 @@ footer {
 
   /* Cards: side-by-side on tablet */
   .card-container {
-    flex-direction: column;         /* Use "column" to lay out cards horizontally */
+    flex-direction: row;         /* Use "column" to lay out cards horizontally */
     flex-wrap: wrap;              /* Use "wrap" so cards can wrap to next row */
   }
 
@@ -224,7 +229,7 @@ footer {
    DESKTOP STYLES (1024px and up)
    =================== */
 
-@media (min-width: 1024px) {
+@media (min-width: 1024x) {
 
   /* Nav: widest spacing on desktop */
   nav ul {
