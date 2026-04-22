@@ -1,0 +1,156 @@
+/* ===================
+   Island Brews FAQ Styles
+   ===================
+
+   Colors you'll need:
+   - Coffee Brown: #5D4037
+   - Light Brown: #8D6E63
+   - Tropical Orange: #C65500
+   - Dark Roast: #3E2723
+   - Cream: #FFFAF0
+   - Light Peach: #FFF3E0
+   - Warm Gray: #D7CCC8
+*/
+
+/* ===================
+   Reset & Base Styles
+   =================== */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #3E2723;
+  background-color: #FFFAF0;
+}
+
+/* ===================
+   Header & Navigation
+   (reusing styles from homepage)
+   =================== */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #5D4037;
+  padding: 16px 24px;
+}
+
+.logo {
+  font-family: Georgia, serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #FFFAF0;
+}
+
+nav ul {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+}
+
+nav a {
+  color: #FFFAF0;
+  text-decoration: none;
+  padding: 8px 12px;
+}
+
+nav a:hover {
+  color: #8D6E63;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+/* ===================
+   Footer
+   =================== */
+
+footer {
+  background-color: #5D4037;
+  color: #FFFAF0;
+  text-align: center;
+  padding: 20px;
+}
+
+/* ===================
+   Page Heading
+   =================== */
+
+main h1 {
+  font-family: Georgia, serif;
+  color: #5D4037;
+  text-align: center;
+  margin: 40px 0 24px;
+}
+
+/* ===================
+   FAQ Section Layout
+   =================== */
+
+.faq-section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px 40px;
+}
+
+/* ===================
+   PART 2: FAQ Item Styling
+   =================== */
+
+/* Step 1: Style each FAQ item wrapper */
+.faq-item {
+  margin-bottom: 10px;          /* Use 10px for space between items */
+  border: 1px solid #D7CCC8;                 /* Use 1px solid #D7CCC8 */
+  border-radius: 4px;          /* Use 4px for slightly rounded corners */
+}
+
+/* Step 2: Style the FAQ question buttons */
+.faq-question {
+  width: 100%;                  /* Use 100% to span full width */
+  text-align: left;             /* Use "left" so text aligns left */
+  padding: 16px;                /* Use 16px */
+  font-size: 1.1rem;              /* Use 1.1rem */
+  font-weight: bold;            /* Use "bold" */
+  color: #3E2723;                  /* Use dark roast: #3E2723 */
+  background: #FFF3E0;             /* Use light peach: #FFF3E0 */
+  border: none;                 /* Use "none" (the faq-item has the border) */
+  cursor: pointer;                 /* Use "pointer" for clickable hand icon */
+}
+
+/* Step 3: Add hover effect for questions */
+.faq-question:hover {
+  background: #D7CCC8;             /* Use warm gray: #D7CCC8 */
+}
+
+/* Step 4: Add focus state for keyboard users */
+/* This is important for accessibility! When someone uses Tab to
+   navigate, they need to see which button is focused. */
+.faq-question:focus {
+  outline: 2px solid #C65500;                /* Use 2px solid #C65500 (tropical orange outline) */
+  outline-offset: 2px;         /* Use 2px (adds space between outline and button) */
+}
+
+/* Step 5: Style the FAQ answers */
+.faq-answer {
+  padding: 16px;                /* Use 16px */
+  background: #FFFAf0;             /* Use cream: #FFFAF0 */
+  border-top: 1 px solid #D7CCC8;             /* Use 1px solid #D7CCC8 */
+}
+
+/* ===================
+   Preparing for JavaScript (Week 15)
+   =================== */
+
+/* This rule will be used next week when JavaScript
+   adds the "hidden" class to answers.
+   For now, all answers are visible! */
+.faq-answer.hidden {
+  display: none;
+}
