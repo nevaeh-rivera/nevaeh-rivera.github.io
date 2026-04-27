@@ -59,7 +59,10 @@ a:hover {
    Layout
    =================== */
 header {
-  padding: 20px;
+  display: flex;                  /* Requirement: Flexbox Header */
+    justify-content: space-between; /* Requirement: Logo left, Nav right */
+    align-items: center;            /* Requirement: Vertically centered */
+    padding: 20px 5%
   border-bottom: 1px solid #e5e7eb;
 }
 
@@ -79,9 +82,9 @@ footer {
    Navigation
    =================== */
 nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+    display: flex;                  
+    margin: 0;
+    gap: 25px;
 }
 
 nav li {
@@ -101,7 +104,33 @@ nav a:hover {
    Components
    =================== */
 /* Add your specific component styles here */
+}
 
+.main-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.card-container {
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+    margin-top: 20px;
+} 
+.card{
+    flex: 1 1 300px;                
+    padding: 25px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    
+    
+    
+    
+}
+}
 
 
 
