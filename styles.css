@@ -128,8 +128,33 @@ main img {
     padding: 25px;
     border: 1px solid #2E5912;
     border-radius: 10px;
+    
 }
 
+/* The container that holds both cards */
+.card-row {
+    display: flex;
+    gap: 20px; /* Space between the image and the text card */
+    align-items: stretch; /* Makes both cards the same height */
+    margin: 40px 0;
+}
 
+/* Styling for the image container */
+.image-card img {
+    width: 400px; /* Adjust size as needed */
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* Styling for the text card next to it */
+.text-card {
+    flex: 1; /* Makes the text card fill the remaining space */
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Gives it the 'card' look */
+    border: 1px solid #eaeaea;
+}
 </body>
 </html>
