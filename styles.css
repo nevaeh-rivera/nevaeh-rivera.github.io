@@ -59,9 +59,9 @@ a:hover {
    Layout
    =================== */
 header {
-  display: flex;                  /* Requirement: Flexbox Header */
-  justify-content: space-between; /* Requirement: Logo left, Nav right */
-  align-items: center;            /* Requirement: Vertically centered */
+  display: flex;                  
+  justify-content: space-between; 
+  align-items: center;           
   padding: 20px 5%;
   border-bottom: 1px solid #e5e7eb;
 }
