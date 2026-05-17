@@ -22,7 +22,7 @@
 /* ===================
    Reset & Base
    =================== */
-* * {
+* {
     box-sizing: border-box;
 }
 
@@ -107,8 +107,6 @@ nav a:hover {
 /* ===================
    Components
    =================== */
-/* Add your specific component styles here */
-
 main img {
   display: block;
   max-width: 100%;
